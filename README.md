@@ -135,19 +135,31 @@ System users with roles (used for login/auth)
 ## 🧠 API Endpoints Overview
 
 🧾 Auth Routes
+
 Method	Endpoint	Description
+
 POST	/auth/login	Login and receive JWT
+
 🍽️ Menu Routes
+
 Method	Endpoint	Description
+
 GET	/menu/categories	Get all main categories
+
 GET	/menu/items/:category	Get items belonging to a category
 
 🪑 Tables Routes
+
 Method	Endpoint	Description
+
 GET	/tables	Get all tables with statuses
+
 GET	/tables/:tableNo	Get a single table info
+
 POST	/tables	Add new table (Admin/Cashier)
+
 PUT	/tables/:tableNo/status	Update table status (Admin/Cashier)
+
 DELETE	/tables/:tableNo	Delete a table if no active orders exist
 
 Table Status Logic:
@@ -159,12 +171,19 @@ Active → Ready for use / Opened
 Occupied → Has confirmed order(s)
 
 📦 Orders Routes
+
 Method	Endpoint	Description
+
 GET	/orders	Get all orders (grouped with items)
+
 GET	/orders/:ticketID	Get detailed info for a specific order
+
 POST	/orders	Create new order (Captain)
+
 PUT	/orders/:ticketID	Edit pending order (Captain)
+
 PUT	/orders/:ticketID/confirm	Confirm order (Cashier)
+
 DELETE	/orders/:ticketID	Delete order (Captain/Cashier)
 
 Automatic Behaviors:
@@ -184,7 +203,9 @@ Run once to create initial Captain & Cashier:
 node seedUsers.js
 
 Reset or re-hash passwords
+
 node resetUsers.js
+
 node hashPassword.js
 
 ## 🧪 Testing with Postman
