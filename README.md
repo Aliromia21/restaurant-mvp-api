@@ -11,6 +11,7 @@ allowing both sides to manage tables, categories, and orders efficiently.
 📁 restaurant-mvp-api
 
 ├── src/
+
 │ ├── db.js → SQL Server connection config
 
 │ ├── server.js → Express app main entry
