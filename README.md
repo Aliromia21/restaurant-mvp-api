@@ -218,11 +218,14 @@ Multi-branch database support
 👨‍💻 Developed By
 
 Ali Romia — Backend Developer
+
 API designed and implemented for integration with Restaurant Android App & Desktop POS System.
 
 🟢 Status
 
 ✅ Fully functional (tested end-to-end)
+
 ✅ Integrated with Android app
+
 ✅ Ready for deployment to Domain or Docker environment
 
