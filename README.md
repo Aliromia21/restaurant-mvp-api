@@ -9,21 +9,37 @@ allowing both sides to manage tables, categories, and orders efficiently.
 ## 🏗️ Project Architecture
 
 📁 restaurant-mvp-api
+
 ├── src/
+
 │ ├── db.js → SQL Server connection config
+
 │ ├── server.js → Express app main entry
+
 │ ├── utils/
+
 │ │ └── authMiddleware.js → Role-based JWT authentication
+
 │ ├── routes/
+
 │ │ ├── auth.routes.js → Login & token generation
+
 │ │ ├── health.routes.js → Basic health check
+
 │ │ ├── menu.routes.js → Categories & items (menu)
+
 │ │ ├── orders.routes.js → Orders management (create, edit, confirm, delete)
+
 │ │ └── tables.routes.js → Tables management & statuses
+
 ├── .env → Environment variables (excluded from Git)
+
 ├── .gitignore
+
 ├── package.json
+
 ├── seedUsers.js → Script to seed default users (captain/cashier)
+
 └── init.sql → SQL schema setup
 
 
@@ -215,7 +231,7 @@ Support for multiple kitchens per item
 
 Multi-branch database support
 
-👨‍💻 Developed By
+Developed By :
 
 Ali Romia — Backend Developer
 
